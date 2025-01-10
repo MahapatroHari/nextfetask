@@ -1,0 +1,145 @@
+$breakpoint-laptop: 460px;
+
+.cardContainer {
+  box-sizing: border-box;
+  display: flex;
+  width: auto;
+  flex-shrink: 0;
+  padding: 15px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  border-radius: 20px;
+
+  @media (width>=$breakpoint-laptop) {
+    width: 334px;
+    padding: 20px 14px;
+    gap: 30px;
+  }
+
+  .stockHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 6px;
+    align-self: stretch;
+
+    .stockInfo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      align-self: stretch;
+
+      h3 {
+        color: #000;
+        font-family: "Satoshi", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        max-width: 133px;
+      }
+
+      div {
+        padding: 5px 10px;
+        gap: 10px;
+        border-radius: 10px;
+        background: var(--solid-blue, #21409a);
+        p {
+          color: #fafafa;
+          font-family: "Satoshi", sans-serif;
+          font-size: 14px;
+          line-height: 16.8px;
+          font-weight: 700;
+        }
+      }
+
+      @media (width>=$breakpoint-laptop) {
+        h3 {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        div {
+          p {
+            font-size: 16px;
+            line-height: 19.2px;
+          }
+        }
+      }
+    }
+
+    .stockFullName {
+      color: #959595;
+      font-family: "Satoshi", sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+
+      @media (width>=$breakpoint-laptop) {
+        font-size: 18px;
+        line-height: 21.6px;
+      }
+    }
+  }
+
+  .priceSection,
+  .transactionDetails,
+  .performanceMetrics {
+    display: flex;
+    align-self: stretch;
+
+    .priceBlock,
+    .detailBlock,
+    .metricBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      flex: 1 0 0;
+
+      .label {
+        color: #000;
+        font-family: "Satoshi-Variable", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+      }
+
+      .value {
+        color: #000;
+        font-family: "Satoshi", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.8px;
+      }
+
+      //Color Change for Buy / Sell value Here
+
+      .buyValue {
+        color: #00b04f;
+      }
+
+      //Bigger Font for Pl Percentage
+
+      .plValue {
+        font-size: 16px;
+        line-height: 19.2px;
+      }
+
+      @media (width>=$breakpoint-laptop) {
+        .label,
+        .value {
+          font-size: 16px;
+          line-height: 19.2px;
+        }
+
+        .plValue {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

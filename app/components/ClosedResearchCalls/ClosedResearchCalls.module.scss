@@ -1,0 +1,31 @@
+$breakpoint-laptop: 460px;
+
+.mainContainer {
+  background: var(
+    --Blue-gradient,
+    linear-gradient(144deg, #4189d9 0%, #0f00bf 100%)
+  );
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 50px 0;
+
+  h2 {
+    font-size: 21px;
+    line-height: 25.2px;
+    color: #fff;
+    text-align: center;
+    font-family: "Satoshi-Variable", sans-serif;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+  }
+  
+  @media (width>=$breakpoint-laptop) {
+    padding: 20px;
+    h2 {
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+  }
+}

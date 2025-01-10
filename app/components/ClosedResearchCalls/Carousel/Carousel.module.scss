@@ -1,0 +1,17 @@
+$breakpoint-laptop: 460px;
+
+.pageContainer {
+  width: 80vw;
+  max-width: 1110px;
+  height: max-content;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+
+    @media (width>=$breakpoint-laptop) {
+      flex-direction: row;
+    }
+}
