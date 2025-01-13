@@ -1,6 +1,6 @@
-$breakpoint-laptop: 460px;
+$breakpoint-tablet: 460px;
 
-.pageContainer {
+.carouselContainer {
   width: 80vw;
   max-width: 1110px;
   height: max-content;
@@ -11,7 +11,30 @@ $breakpoint-laptop: 460px;
   gap: 20px;
   overflow: hidden;
 
-    @media (width>=$breakpoint-laptop) {
-      flex-direction: row;
+  .cardContainerResearch {
+    display: none;
+    @media (width>$breakpoint-tablet) {
+      display: block;
     }
+
+    .sliderContainer {
+      display: flex;
+      gap: 20px;
+      // @media(width>$breakpoint-tablet){
+      //     flex-direction: row;
+      // }
+    }
+  }
+
+  .mobileCardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    @media (width>$breakpoint-tablet) {
+      display: none;
+    }
+  }
 }
+
+//Here

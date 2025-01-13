@@ -1,4 +1,4 @@
-$breakpoint-laptop: 460px;
+$breakpoint-tablet: 460px;
 
 .mainContainer {
   background: var(
@@ -21,7 +21,7 @@ $breakpoint-laptop: 460px;
     margin-bottom: 20px;
   }
   
-  @media (width>=$breakpoint-laptop) {
+  @media (width>=$breakpoint-tablet) {
     padding: 20px;
     h2 {
       font-size: 32px;
