@@ -5,7 +5,6 @@ $breakpoint-tablet: 460px;
   max-width: 1110px;
   height: max-content;
   margin-bottom: 20px;
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -20,9 +19,6 @@ $breakpoint-tablet: 460px;
     .sliderContainer {
       display: flex;
       gap: 20px;
-      // @media(width>$breakpoint-tablet){
-      //     flex-direction: row;
-      // }
     }
   }
 
