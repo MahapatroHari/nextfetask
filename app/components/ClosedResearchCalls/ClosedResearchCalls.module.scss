@@ -1,10 +1,5 @@
-$breakpoint-tablet: 460px;
-
 .mainContainer {
-  background: var(
-    --Blue-gradient,
-    linear-gradient(144deg, #4189d9 0%, #0f00bf 100%)
-  );
+  background: linear-gradient(144deg, #4189d9 0%, #0f00bf 100%);
   box-sizing: border-box;
   border-radius: 10px;
   padding: 20px 10px;

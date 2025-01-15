@@ -1,4 +1,3 @@
-// Carousel.jsx
 "use client";
 
 import React from "react";
@@ -10,7 +9,7 @@ import "glider-js/glider.min.css";
 export default function Carousel() {
   return (
     <div className={`container ${styles.carouselContainer}`}>
-      <div className={`${styles.cardContainerResearch} researchSlider`}>
+      <div className={`${styles.cardContainerDesktop} researchSlider`}>
         <Glider
           draggable
           hasDots
@@ -38,5 +37,3 @@ export default function Carousel() {
     </div>
   );
 }
-
-//Here

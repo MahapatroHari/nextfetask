@@ -1,0 +1,22 @@
+@import 'variables';
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.otf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Satoshi", sans-serif; /* Satoshi as the default font */
+}

@@ -1,16 +1,13 @@
-$breakpoint-tablet: 460px;
-
 .carouselContainer {
   width: 80vw;
   max-width: 1110px;
   height: max-content;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   overflow: hidden;
 
-  .cardContainerResearch {
+  .cardContainerDesktop {
     display: none;
     @media (width>$breakpoint-tablet) {
       display: block;
@@ -19,6 +16,25 @@ $breakpoint-tablet: 460px;
     .sliderContainer {
       display: flex;
       gap: 20px;
+    }
+
+    :global {
+      .glider-dots {
+        margin-top: 20px;
+        gap: 9.2px;
+      }
+
+      .glider-dot {
+        margin: 0;
+        height: 16.64px;
+        width: 16.64px;
+        background: transparent;
+        border: 4px solid white;
+      }
+
+      .glider-dot.active {
+        background: white;
+      }
     }
   }
 
@@ -32,5 +48,3 @@ $breakpoint-tablet: 460px;
     }
   }
 }
-
-//Here

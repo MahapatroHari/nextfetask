@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.scss";
-
+import "@/app/_styles/_globals.scss"
 
 export const metadata: Metadata = {
   title: "Front end task",
@@ -14,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
